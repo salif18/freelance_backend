@@ -27,12 +27,15 @@ const UserSchema = new mongoose.Schema({
   },
 
   // Informations spécifiques aux freelancers
+  categorie:{type: String,default: null },
+  description:{type:String,default: null },
   skills: [{ type: String, default: null }],
   experience: { type: Number, default: null },
   portfolio: [{ type: String, default: null }],
   hourlyRate: { type: Number, default: null },
   rating: { type: Number, default: 0 },
   completedProjects: { type: Number, default: 0 },
+  monCv :{ type: String, default: null },
 
   // Informations spécifiques aux clients
   companyName: { type: String, default: null },
